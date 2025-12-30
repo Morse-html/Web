@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@1,700&display=swap');
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px rgb(243, 221, 165) inset !important;
+            -webkit-text-fill-color: black !important;
+        }
+
+
+        html {
+            font-size: 15px;
+            background-color: rgb(14, 18, 27);
+        }
+
+        .form h1 {
+            padding: 0;
+            margin: 0;
+            font-family: "Baloo Bhai 2", sans-serif, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            color: hsl(203.38, 100%, 69.8%);
+            /* text-align: center; */
+            font-size: 2.6rem;
+
+        }
+
+        .paragraph p {
+            margin: 0px;
+            padding-top: 0.32vw;
+            padding-bottom: 0.32vw;
+            font-family: sans-serif, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            color: hsl(148, 45%, 83%);
+            font-size: 1.2rem;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            display: inline-block;
+            color: hsl(49.46, 100%, 85.49%);
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: hsl(206.09, 100%, 31.57%);
+            border-radius: 8px;
+        }
+
+        .form {
+            display: block;
+            color: #e5ff00;
+            font-size: 20px;
+        }
+
+        .name {
+            color: black;
+            background-color: rgb(243, 221, 165);
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 37vw;
+            height: 2vh;
+        }
+
+        .address {
+            color: black;
+            background-color: rgb(243, 221, 165);
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 37vw;
+            height: 2vh;
+        }
+
+        .color {
+            padding: 0px;
+            margin: 0px;
+            border: 0.9px solid rgb(167, 60, 60);
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(41, 145, 41, 0.5);
+            box-sizing: border-box;
+            width: 10vw;
+            height: 7vh;
+        }
+
+        .dob {
+            font-size: 18px;
+            width: 20vw;
+            height: 2vh;
+            background-color: rgb(243, 221, 165);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .age {
+            font-size: 18px;
+            width: 12.5vw;
+            height: 2vh;
+            background-color: rgb(243, 221, 165);
+            box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .gend {
+            display: inline-block;
+            color: hsl(49.46, 100%, 85.49%);
+            padding: 0px 0px;
+            margin-top: 4px;
+            text-decoration: none;
+
+        }
+
+        .phone {
+            font-size: 18px;
+            width: 37vw;
+            height: 2vh;
+            background-color: rgb(243, 221, 165);
+            box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .email {
+            font-size: 18px;
+            width: 27vw;
+            height: 2vh;
+            background-color: rgb(243, 221, 165);
+            box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .food {
+            margin-bottom: 10px;
+            font-size: 18px;
+            width: 27vw;
+            height: 2vh;
+            background-color: rgb(243, 221, 165);
+            box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .submit {
+            padding: 0px;
+            margin: 0px;
+            display: grid;
+            font-size: 15px;
+            width: 12vw;
+            height: 3vh;
+            background-color: rgb(243, 221, 165);
+            border: 2px solid black;
+            box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+        }
+
+        footer>p {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            font-family: 'baloo bhai 2', sans-serif;
+            font-size: 18px;
+            color: rgb(101, 195, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="form">
+            <h1>Form<h1>
+
+        </div>
+
+        <div class="paragraph">
+            <p>
+                Welcome to my website! Please fill out the form below to get started.
+            </p>
+
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Shadows.html">Home</a></li>
+            <li><a href="Abot.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <hr>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <form action="/submit" method="post">
+
+                <!-- name -->
+                <label for="name" class="form">Name:</label>
+                <input type="text" class=" name" name="name" placeholder="eg: Rocky" required>
+
+                <!-- Father's name -->
+                <label for="name" class="form">Father's Name:</label>
+                <input type="text" class=" name" name="name" placeholder="eg: Max" required>
+
+                <!-- Mother's name -->
+                <label for="name" class="form">Mother's Name:</label>
+                <input type="text" class=" name" name="name" placeholder="eg: Maya" required>
+
+                <!-- address-->
+                <label for="address" class="form">Address:</label>
+                <input type="text" class=" address" name="address" placeholder="eg: 123 Main St" required>
+
+                <!-- favorite color -->
+                <label for="color" class="form">Favorite Color:</label>
+                <input type="color" class="color" name="color" required>
+
+                <!-- dob -->
+                <label for="dob" class="form">Date of Birth:</label>
+                <input type="date" class="dob" name="dob" required>
+
+                <!-- Age -->
+                <label for="age" class="form">Age:</label>
+                <input type="number" class="age" name="age" placeholder="eg: 20 (min 3 and max 120)" min="3" max="120"
+                    required>
+
+                <!-- gender -->
+                <label for="gender" class="form">Gender:</label>
+
+                <label for="Male" class="form gend">Male -</label>
+                <input type="radio" class="gender" name="gender" value="Male" required>
+
+                <label for="Female" class="form gend">Female -</label>
+                <input type="radio" class="gender" name="gender" value="Female" required>
+
+                <label for="Other " class="form gend">Other -</label>
+                <input type="radio" class="gender" name="gender" value="Other" required>
+
+                <label for="notosay " class="form gend">Prefer not to say -</label>
+                <input type="radio" class="gender" name="gender" value="prefer" required>
+
+                <!-- phone number -->
+                <label for="phone" class="form">Phone Number:</label>
+                <input type="tel" class="phone" name="phone" optional>
+
+                <!-- email -->
+                <label for="email" class="form">Email:</label>
+                <input type="email" class="email" name="email" placeholder="rocky@example.com" optional>
+
+                <!-- favorite food -->
+                <label for="food" class="form">Favorite Food:</label>
+                <input type="text" class="food" name="food" placeholder="eg: Burger" required>
+
+                <!-- submit button -->
+                <input type="submit" value="Submit" class="submit">
+
+                <hr>
+
+                <footer>
+                    <p>Thank you for your submission!</p>
+                   <p>V1.0.0</p>
+                </footer>
+
+
+
+
+        </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
